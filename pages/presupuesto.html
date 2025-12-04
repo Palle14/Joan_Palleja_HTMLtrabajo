@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>TiempoPerfecto | Solicitar presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="../index.html" class="navbar-logo">
+          <img
+            src="../Images/logo.png"
+            alt="Logo TiempoPerfecto"
+            width="70"
+            height="70"
+          />
+          <span>TIEMPOPERFECTO</span>
+        </a>
+
+        <nav>
+          <ul class="navbar-menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a class="active" href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h1 class="section-title">Solicita tu presupuesto</h1>
+
+        <div class="form-wrapper">
+          <!-- Eliminamos novalidate para que funcione la validación HTML5 -->
+          <form action="#" method="post">
+            <!-- Nombre -->
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{2,50}$"
+                title="Introduce solo letras y espacios (mínimo 2 caracteres)."
+                placeholder="Escribe tu nombre"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                title="Introduce un correo electrónico válido."
+                placeholder="tucorreo@ejemplo.com"
+              />
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-group">
+              <label for="telefono">Teléfono *</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                pattern="^[0-9]{9}$"
+                title="Introduce un teléfono de 9 dígitos sin espacios."
+                placeholder="Ej: 600123123"
+              />
+            </div>
+
+            <!-- Texto multilínea -->
+            <div class="form-group">
+              <label for="mensaje">Solicite más información *</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                required
+                placeholder="Cuéntanos qué tipo de reloj o servicio necesitas"
+              ></textarea>
+            </div>
+
+            <div class="form-footer">
+              <label class="checkbox-group">
+                <input type="checkbox" name="privacidad" required />
+                <span>
+                  He leído y acepto la
+                  <a href="#">Política de privacidad</a> de TiempoPerfecto. *
+                </span>
+              </label>
+
+              <button type="submit" class="btn-primary">
+                Enviar solicitud
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img
+              src="../Images/facebook.png"
+              alt="Facebook"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img
+              src="../Images/insta.png"
+              alt="Instagram"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener">
+            <img
+              src="../Images/X.png"
+              alt="X (Twitter)"
+              width="24"
+              height="24"
+            />
+          </a>
+        </div>
+
+        <div class="footer-text">
+          <p>TiempoPerfecto · C/ Relojeros 21, 43001 Tarragona · España</p>
+          <p>© 2024 TiempoPerfecto · <a href="#">Aviso legal</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
